@@ -1,6 +1,5 @@
-package com.url.shortner.security;
+package com.url.shortner.security.jwt;
 
-import com.url.shortner.service.UserDetailsImpl;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -47,8 +46,10 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 }
             }
         } catch (Exception e){
-
+                e.printStackTrace();
         }
+
+        filterChain.doFilter(request,response);
 
     }
 }
