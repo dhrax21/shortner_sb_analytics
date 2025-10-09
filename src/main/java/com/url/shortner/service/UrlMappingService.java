@@ -5,6 +5,8 @@ import com.url.shortner.dtos.UrlMappingDTO;
 import com.url.shortner.models.ClickEvent;
 import com.url.shortner.models.UrlMapping;
 import com.url.shortner.models.User;
+import com.url.shortner.repository.ClickEventRepository;
+import com.url.shortner.repository.UrlMappingRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
